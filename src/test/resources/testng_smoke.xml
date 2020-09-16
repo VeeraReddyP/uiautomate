@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="E2E automation Test Suite" verbose="1" thread-count="10" parallel="none">
+<listeners>
+    <listener class-name="com.clickship.web.automation.listeners.ExtentListener"></listener>
+</listeners>
+
+<!-- -->
+    <test name="clickShip :-Valid and Invalid Login">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.clickship.web.automation.tests.login.CSLoginTest"/>
+        </classes>
+    </test>
+
+</suite>
